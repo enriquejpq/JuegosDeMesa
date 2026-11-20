@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Textos de la app -->
 <resources>
-    <string name="app_name">JuegosDeMesa</string>
+    <string name="Juegos de Mesa">JuegosDeMesa</string>
 
     <!-- Login -->
     <string name="desc_logo">Logo de Juegos de Mesa</string>
