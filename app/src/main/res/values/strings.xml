@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de la app -->
 <resources>
     <string name="app_name">JuegosDeMesa</string>
+
+    <!-- Login -->
+    <string name="desc_logo">Logo de Juegos de Mesa</string>
+    <string name="login_subtitulo">Tu colección de juegos, siempre a mano</string>
+    <string name="hint_correo">Correo (ej: jugador@ejemplo.cl)</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="login_ir_registro">¿No tienes cuenta? Regístrate</string>
 </resources>

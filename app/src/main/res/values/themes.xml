@@ -8,7 +8,7 @@
 
     <style name="Theme.JuegosDeMesa" parent="Base.Theme.JuegosDeMesa" />
 
-    <!-- Estilos propios -->
+    <!-- Estilos -->
 
     <!-- Títulos de las pantallas -->
     <style name="EstiloTitulo">
