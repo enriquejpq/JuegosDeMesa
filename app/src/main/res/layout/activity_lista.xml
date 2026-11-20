@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla con la lista de juegos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaActivity">
+
+    <!-- Barra de arriba con el título y los botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Título (con weight 1 ocupa el espacio que sobra) -->
+        <TextView
+            android:id="@+id/txtTituloLista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lista_titulo"
+            style="@style/EstiloTitulo" />
+
+        <!-- Botón para ir a la IA -->
+        <ImageButton
+            android:id="@+id/btnIALista"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/star_big_on"
+            android:background="@android:color/transparent"
+            app:tint="@color/primario"
+            android:contentDescription="@string/desc_btn_ia" />
+
+        <!-- Botón para agregar un juego -->
+        <ImageButton
+            android:id="@+id/btnAgregarLista"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_input_add"
+            android:background="@android:color/transparent"
+            app:tint="@color/primario"
+            android:contentDescription="@string/desc_btn_agregar" />
+    </LinearLayout>
+
+    <!-- Cantidad de juegos -->
+    <TextView
+        android:id="@+id/txtCantidadLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/lista_cantidad"
+        style="@style/EstiloSubtitulo" />
+
+    <!-- ScrollView para que la lista se pueda deslizar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Contenedor de las filas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Fila 1: Catan -->
+            <LinearLayout
+                style="@style/EstiloTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNombreJuego1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/juego1_nombre"
+                        style="@style/EstiloNombreJuego" />
+
+                    <TextView
+                        android:id="@+id/txtInfoJuego1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/juego1_info"
+                        style="@style/EstiloSubtitulo" />
+                </LinearLayout>
+
+                <!-- Botón para ver el detalle -->
+                <ImageButton
+                    android:id="@+id/btnVerJuego1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_view"
+                    android:background="@android:color/transparent"
+                    app:tint="@color/primario"
+                    android:contentDescription="@string/desc_ver_juego1" />
+            </LinearLayout>
+
+            <!-- Fila 2: Dixit -->
+            <LinearLayout
+                style="@style/EstiloTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNombreJuego2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/juego2_nombre"
+                        style="@style/EstiloNombreJuego" />
+
+                    <TextView
+                        android:id="@+id/txtInfoJuego2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/juego2_info"
+                        style="@style/EstiloSubtitulo" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnVerJuego2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_view"
+                    android:background="@android:color/transparent"
+                    app:tint="@color/primario"
+                    android:contentDescription="@string/desc_ver_juego2" />
+            </LinearLayout>
+
+            <!-- Fila 3: Uno -->
+            <LinearLayout
+                style="@style/EstiloTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNombreJuego3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/juego3_nombre"
+                        style="@style/EstiloNombreJuego" />
+
+                    <TextView
+                        android:id="@+id/txtInfoJuego3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/juego3_info"
+                        style="@style/EstiloSubtitulo" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnVerJuego3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_view"
+                    android:background="@android:color/transparent"
+                    app:tint="@color/primario"
+                    android:contentDescription="@string/desc_ver_juego3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -24,4 +24,20 @@
     <string name="registro_terminos">Acepto los términos y condiciones</string>
     <string name="btn_crear_cuenta">Crear cuenta</string>
     <string name="registro_ir_login">¿Ya tienes cuenta? Ingresa</string>
+
+    <!-- Lista -->
+    <string name="lista_titulo">Mi colección</string>
+    <string name="desc_btn_ia">Recomendar un juego con IA</string>
+    <string name="desc_btn_agregar">Agregar juego</string>
+    <string name="lista_cantidad">3 juegos en tu colección</string>
+    <string name="juego1_nombre">Catan</string>
+    <string name="juego1_info">Estrategia · 3 a 4 jugadores · 90 min</string>
+    <string name="desc_ver_juego1">Ver detalle de Catan</string>
+    <string name="juego2_nombre">Dixit</string>
+    <string name="juego2_info">Party · 3 a 8 jugadores · 30 min</string>
+    <string name="desc_ver_juego2">Ver detalle de Dixit</string>
+    <string name="juego3_nombre">Uno</string>
+    <string name="juego3_info">Cartas · 2 a 10 jugadores · 20 min</string>
+    <string name="desc_ver_juego3">Ver detalle de Uno</string>
 </resources>
+
