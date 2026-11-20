@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla para agregar un juego. Uso ScrollView porque el formulario es largo. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarActivity">
+
+    <!-- Contenedor vertical con el formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Barra con el título y el botón volver -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtTituloAgregar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/agregar_titulo"
+                style="@style/EstiloTitulo" />
+
+            <ImageButton
+                android:id="@+id/btnVolverAgregar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="@android:color/transparent"
+                app:tint="@color/primario"
+                android:contentDescription="@string/desc_btn_volver" />
+        </LinearLayout>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtSubtituloAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/agregar_subtitulo"
+            style="@style/EstiloSubtitulo" />
+
+        <!-- Campo para el nombre del juego -->
+        <EditText
+            android:id="@+id/edtNombreJuegoAgregar"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_nombre_juego"
+            android:inputType="textCapWords"
+            android:importantForAutofill="no" />
+
+        <!-- Texto de la categoría -->
+        <TextView
+            android:id="@+id/txtCategoriaAgregar"
+            style="@style/EstiloEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_categoria" />
+
+        <!-- Grupo de opciones: solo se puede elegir una -->
+        <RadioGroup
+            android:id="@+id/rgCategoriaAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEstrategiaAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_estrategia" />
+
+            <RadioButton
+                android:id="@+id/rbCartasAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_cartas" />
+
+            <RadioButton
+                android:id="@+id/rbPartyAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_party" />
+
+            <RadioButton
+                android:id="@+id/rbCooperativoAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_cooperativo" />
+        </RadioGroup>
+
+        <!-- Texto de la cantidad de jugadores -->
+        <TextView
+            android:id="@+id/txtJugadoresAgregar"
+            style="@style/EstiloEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_jugadores" />
+
+        <!-- Fila con los campos mínimo y máximo (cada uno ocupa la mitad) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtMinJugadoresAgregar"
+                style="@style/EstiloCampo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/hint_min_jugadores"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/edtMaxJugadoresAgregar"
+                style="@style/EstiloCampo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="@string/hint_max_jugadores"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+        </LinearLayout>
+
+        <!-- Campo para la duración (solo números) -->
+        <EditText
+            android:id="@+id/edtDuracionAgregar"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_duracion"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <!-- Campo para las notas (varias líneas) -->
+        <EditText
+            android:id="@+id/edtNotasAgregar"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_notas"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:importantForAutofill="no" />
+
+        <!-- Botón para guardar -->
+        <Button
+            android:id="@+id/btnGuardarAgregar"
+            style="@style/EstiloBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_guardar" />
+
+    </LinearLayout>
+</ScrollView>

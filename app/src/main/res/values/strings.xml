@@ -39,5 +39,19 @@
     <string name="juego3_nombre">Uno</string>
     <string name="juego3_info">Cartas · 2 a 10 jugadores · 20 min</string>
     <string name="desc_ver_juego3">Ver detalle de Uno</string>
+
+    <!-- Agregar -->
+    <string name="agregar_titulo">Nuevo juego</string>
+    <string name="desc_btn_volver">Volver</string>
+    <string name="agregar_subtitulo">Completa los datos del juego</string>
+    <string name="hint_nombre_juego">Nombre del juego (ej: Catan)</string>
+    <string name="agregar_categoria">Categoría</string>
+    <string name="agregar_jugadores">Cantidad de jugadores</string>
+    <string name="hint_min_jugadores">Mínimo</string>
+    <string name="hint_max_jugadores">Máximo</string>
+    <string name="hint_duracion">Duración en minutos</string>
+    <string name="hint_notas">Notas (opcional)</string>
+    <string name="btn_guardar">Guardar juego</string>
 </resources>
+
 
