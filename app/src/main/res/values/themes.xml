@@ -1,9 +1,61 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema de la app en modo claro -->
     <style name="Base.Theme.JuegosDeMesa" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorOnPrimary">@color/texto_sobre_primario</item>
+        <item name="android:windowBackground">@color/fondo</item>
     </style>
 
     <style name="Theme.JuegosDeMesa" parent="Base.Theme.JuegosDeMesa" />
+
+    <!-- Estilos propios -->
+
+    <!-- Títulos de las pantallas -->
+    <style name="EstiloTitulo">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
+
+    <!-- Subtítulos y textos secundarios -->
+    <style name="EstiloSubtitulo">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+    </style>
+
+    <!-- Textos sobre un grupo de campos -->
+    <style name="EstiloEtiqueta">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
+
+    <!-- Campos de texto -->
+    <style name="EstiloCampo">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Botones principales -->
+    <style name="EstiloBoton">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Tarjetas con fondo -->
+    <style name="EstiloTarjeta">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/fondo_tarjeta</item>
+    </style>
+
+    <!-- Nombre del juego en las tarjetas -->
+    <style name="EstiloNombreJuego">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
 </resources>

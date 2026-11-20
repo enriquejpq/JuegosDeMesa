@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml (modo claro): los colores de la app, cada uno con un nombre según su FUNCIÓN.
+    Se usan con @color/nombre. En modo oscuro Android usa los de values-night/colors.xml,
+    que tienen los mismos nombres pero otros valores.
+    Formato #RRGGBB: rojo, verde y azul en hexadecimal.
+-->
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- primario: verde "paño de mesa de juego". Es el colorPrimary del tema: botones, casillas y radio buttons. -->
+    <color name="primario">#1F6F5C</color>
+    <!-- texto_sobre_primario: color del texto que va encima del primario (el texto de los botones). -->
+    <color name="texto_sobre_primario">#FFFFFF</color>
+    <!-- fondo: color de fondo de todas las pantallas (windowBackground en themes.xml). -->
+    <color name="fondo">#FAF7F2</color>
+    <!-- fondo_tarjeta: fondo de las tarjetas de la lista, del detalle y del área de respuesta de la IA. -->
+    <color name="fondo_tarjeta">#E6F0EC</color>
+    <!-- texto_principal: color de títulos y textos importantes. -->
+    <color name="texto_principal">#1C1B1F</color>
+    <!-- texto_secundario: color de subtítulos y datos de apoyo (más suave). -->
+    <color name="texto_secundario">#56625E</color>
+    <!-- acento: color dorado "dado" para destacar un dato (veces jugado). -->
+    <color name="acento">#9A6A00</color>
+    <!-- peligro: rojo del botón Eliminar, para avisar que es una acción delicada. -->
+    <color name="peligro">#B3261E</color>
+    <!-- texto_sobre_peligro: color del texto encima del rojo de peligro. -->
+    <color name="texto_sobre_peligro">#FFFFFF</color>
 </resources>
