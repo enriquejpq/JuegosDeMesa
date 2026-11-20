@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla de registro. Uso ScrollView porque el formulario es largo. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <!-- Contenedor vertical con el formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTituloRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_titulo"
+            style="@style/EstiloTitulo" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtSubtituloRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/registro_subtitulo"
+            style="@style/EstiloSubtitulo" />
+
+        <!-- Campo para el nombre -->
+        <EditText
+            android:id="@+id/edtNombreRegistro"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
+
+        <!-- Campo para el correo -->
+        <EditText
+            android:id="@+id/edtCorreoRegistro"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <!-- Campo para la contraseña -->
+        <EditText
+            android:id="@+id/edtContrasenaRegistro"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_contrasena"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword" />
+
+        <!-- Campo para repetir la contraseña -->
+        <EditText
+            android:id="@+id/edtRepetirContrasenaRegistro"
+            style="@style/EstiloCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_repetir_contrasena"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword" />
+
+        <!-- Pregunta del tipo de juego -->
+        <TextView
+            android:id="@+id/txtPreguntaRegistro"
+            style="@style/EstiloEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_pregunta" />
+
+        <!-- Grupo de opciones: solo se puede elegir una -->
+        <RadioGroup
+            android:id="@+id/rgTipoJuegoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEstrategiaRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/categoria_estrategia" />
+
+            <RadioButton
+                android:id="@+id/rbCartasRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_cartas" />
+
+            <RadioButton
+                android:id="@+id/rbPartyRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_party" />
+
+            <RadioButton
+                android:id="@+id/rbCooperativoRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria_cooperativo" />
+        </RadioGroup>
+
+        <!-- Casilla para aceptar los términos -->
+        <CheckBox
+            android:id="@+id/chkTerminosRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/registro_terminos" />
+
+        <!-- Botón para crear la cuenta -->
+        <Button
+            android:id="@+id/btnCrearCuentaRegistro"
+            style="@style/EstiloBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_crear_cuenta" />
+
+        <!-- Texto para volver al login -->
+        <TextView
+            android:id="@+id/txtIrLoginRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:text="@string/registro_ir_login"
+            android:textSize="16sp"
+            android:textColor="@color/primario" />
+
+    </LinearLayout>
+</ScrollView>

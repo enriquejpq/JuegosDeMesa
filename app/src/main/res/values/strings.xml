@@ -10,4 +10,18 @@
     <string name="hint_contrasena">Contraseña</string>
     <string name="btn_ingresar">Ingresar</string>
     <string name="login_ir_registro">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="registro_subtitulo">Guarda los juegos que tienes y los que juegas</string>
+    <string name="hint_nombre">Nombre (ej: Jugador Uno)</string>
+    <string name="hint_repetir_contrasena">Repetir contraseña</string>
+    <string name="registro_pregunta">¿Qué tipo de juego prefieres?</string>
+    <string name="categoria_estrategia">Estrategia</string>
+    <string name="categoria_cartas">Cartas</string>
+    <string name="categoria_party">Party (para grupos)</string>
+    <string name="categoria_cooperativo">Cooperativo</string>
+    <string name="registro_terminos">Acepto los términos y condiciones</string>
+    <string name="btn_crear_cuenta">Crear cuenta</string>
+    <string name="registro_ir_login">¿Ya tienes cuenta? Ingresa</string>
 </resources>
