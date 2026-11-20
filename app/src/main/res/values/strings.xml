@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Textos de la app -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos de la app -->
 <resources>
     <string name="app_name">JuegosDeMesa</string>
 
@@ -51,6 +52,15 @@
     <string name="hint_duracion">Duración en minutos</string>
     <string name="hint_notas">Notas (opcional)</string>
     <string name="btn_guardar">Guardar juego</string>
+
+    <!-- Detalle -->
+    <string name="detalle_jugadores">Jugadores: 3 a 4</string>
+    <string name="detalle_duracion">Duración: 90 minutos</string>
+    <string name="detalle_edad">Edad recomendada: 10+</string>
+    <string name="detalle_veces">Jugado 12 veces</string>
+    <string name="detalle_etiqueta_notas">Notas</string>
+    <string name="detalle_notas">Ideal para jugar en familia los domingos. Faltan 2 cartas de desarrollo.</string>
+    <string name="detalle_favorito">Marcar como favorito</string>
+    <string name="btn_editar">Editar juego</string>
+    <string name="btn_eliminar">Eliminar de mi colección</string>
 </resources>
-
-
