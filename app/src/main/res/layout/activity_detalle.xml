@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla con el detalle de un juego -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActivity">
+
+    <!-- Contenedor vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Barra con el nombre del juego y el botón volver -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtNombreDetalle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/juego1_nombre"
+                style="@style/EstiloTitulo" />
+
+            <ImageButton
+                android:id="@+id/btnVolverDetalle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="@android:color/transparent"
+                app:tint="@color/primario"
+                android:contentDescription="@string/desc_btn_volver" />
+        </LinearLayout>
+
+        <!-- Categoría del juego -->
+        <TextView
+            android:id="@+id/txtCategoriaDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/categoria_estrategia"
+            style="@style/EstiloSubtitulo" />
+
+        <!-- Tarjeta con los datos del juego -->
+        <LinearLayout
+            style="@style/EstiloTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtJugadoresDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_jugadores"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal" />
+
+            <TextView
+                android:id="@+id/txtDuracionDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/detalle_duracion"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal" />
+
+            <TextView
+                android:id="@+id/txtEdadDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/detalle_edad"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal" />
+
+            <!-- Veces jugado (en color dorado) -->
+            <TextView
+                android:id="@+id/txtVecesDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/detalle_veces"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/acento" />
+        </LinearLayout>
+
+        <!-- Notas del juego -->
+        <TextView
+            android:id="@+id/txtEtiquetaNotasDetalle"
+            style="@style/EstiloEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detalle_etiqueta_notas" />
+
+        <TextView
+            android:id="@+id/txtNotasDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/detalle_notas"
+            style="@style/EstiloSubtitulo" />
+
+        <!-- Casilla para marcar como favorito -->
+        <CheckBox
+            android:id="@+id/chkFavoritoDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="@string/detalle_favorito" />
+
+        <!-- Botón para editar -->
+        <Button
+            android:id="@+id/btnEditarDetalle"
+            style="@style/EstiloBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_editar" />
+
+        <!-- Botón para eliminar (en rojo) -->
+        <Button
+            android:id="@+id/btnEliminarDetalle"
+            style="@style/EstiloBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/peligro"
+            android:textColor="@color/texto_sobre_peligro"
+            android:text="@string/btn_eliminar" />
+
+    </LinearLayout>
+</ScrollView>
