@@ -63,4 +63,13 @@
     <string name="detalle_favorito">Marcar como favorito</string>
     <string name="btn_editar">Editar juego</string>
     <string name="btn_eliminar">Eliminar de mi colección</string>
+
+    <!-- IA -->
+    <string name="ia_titulo">Recomendador IA</string>
+    <string name="ia_subtitulo">Cuéntale a la IA con quién y cuánto tiempo vas a jugar</string>
+    <string name="ia_pregunta">¿Con quién vas a jugar?</string>
+    <string name="hint_pregunta_ia">Ej: Somos 5 amigos y tenemos 30 minutos</string>
+    <string name="btn_preguntar_ia">Recomendar juego</string>
+    <string name="ia_etiqueta_respuesta">Recomendación</string>
+    <string name="ia_respuesta_ejemplo">Para 5 amigos y 30 minutos te recomiendo:\n\n· Dixit: admite de 3 a 8 jugadores, dura unos 30 minutos y se explica en 2 minutos.\n\n· Uno: si quieren algo aún más rápido y conocido por todos.\n\nDe tu colección, Catan no es buena idea hoy: es para máximo 4 personas y dura cerca de 90 minutos.</string>
 </resources>
