@@ -24,4 +24,6 @@
     <color name="peligro">#B3261E</color>
     <!-- texto_sobre_peligro: color del texto encima del rojo de peligro. -->
     <color name="texto_sobre_peligro">#FFFFFF</color>
+    <!-- Fondo del ícono -->
+    <color name="ic_launcher_background">#1F6F5C</color>
 </resources>
